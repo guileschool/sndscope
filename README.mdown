@@ -3,3 +3,13 @@ This application shows a visual representation of a sound file. Basicially, it i
 The implementation is not ideal as it uses NSSound to play the file and libsndfile to analyze it.
 
 When its analyzing a sound file, it draws random dots. How boring. Thy [this file](http://www.darkbits.org/~per/music/oscillofun.flac "Oscillofun") instead - you have to convert it to WAV first.
+
+## Important
+You will need the libsndfile library to compile and execute the application!
+
+**How to install it:**
+1. Install [MacPorts](http://www.macports.org "MacPorts") iv you haven't already.
+2. Run this in Terminal:
+```
+sudo port install libsndfile
+```
