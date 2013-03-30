@@ -8,8 +8,8 @@ When its analyzing a sound file, it draws random dots. How boring. Thy [this fil
 You will need the libsndfile library to compile and execute the application!
 
 **How to install it:**
-1. Install [MacPorts](http://www.macports.org "MacPorts") iv you haven't already.
+1. Install [MacPorts](http://www.macports.org "MacPorts") if you haven't already.
 2. Run this in Terminal:
 ```
 sudo port install libsndfile
-```
+``
