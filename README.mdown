@@ -1,0 +1,5 @@
+This application shows a visual representation of a sound file. Basicially, it is written in C with an Objective-C frontend, so I suppose it could be transferred to other systems rather easily. Why did I develop this? Because I was bored.
+
+The implementation is not ideal as it uses NSSound to play the file and libsndfile to analyze it.
+
+When its analyzing a sound file, it draws random dots. How boring. Thy [this file](http://www.darkbits.org/~per/music/oscillofun.flac "Oscillofun") instead - you have to convert it to WAV first.
