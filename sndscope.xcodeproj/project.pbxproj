@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		368347F11707655500CFB4B3 /* dot.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 368347EE170761F200CFB4B3 /* dot.ttf */; };
 		36B1C794170617F80003153A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B1C793170617F80003153A /* Cocoa.framework */; };
 		36B1C79E170617F80003153A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36B1C79C170617F80003153A /* InfoPlist.strings */; };
 		36B1C7A0170617F80003153A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B1C79F170617F80003153A /* main.m */; };
@@ -19,7 +20,21 @@
 		36B1C7D61706631C0003153A /* libsndfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B1C7D51706631C0003153A /* libsndfile.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		368347F01707654600CFB4B3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Fonts;
+			dstSubfolderSpec = 7;
+			files = (
+				368347F11707655500CFB4B3 /* dot.ttf in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		368347EE170761F200CFB4B3 /* dot.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dot.ttf; sourceTree = "<group>"; };
 		36B1C790170617F80003153A /* sndscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sndscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36B1C793170617F80003153A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		36B1C796170617F80003153A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -111,6 +126,7 @@
 		36B1C79A170617F80003153A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				368347EE170761F200CFB4B3 /* dot.ttf */,
 				36B1C7CE17065DE90003153A /* icon.icns */,
 				36B1C79B170617F80003153A /* sndscope-Info.plist */,
 				36B1C79C170617F80003153A /* InfoPlist.strings */,
@@ -131,6 +147,7 @@
 				36B1C78C170617F80003153A /* Sources */,
 				36B1C78D170617F80003153A /* Frameworks */,
 				36B1C78E170617F80003153A /* Resources */,
+				368347F01707654600CFB4B3 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -329,6 +346,7 @@
 				36B1C7AF170617F80003153A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

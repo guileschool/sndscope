@@ -15,4 +15,6 @@
 
 @property BOOL loading;
 
+@property (strong) NSString *fileName;
+
 @end

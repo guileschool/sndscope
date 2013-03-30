@@ -90,7 +90,7 @@ void scope_getr(scope_t *s, float **data, int *dlen, float time) {
 //    time *= 2;
 //    int sampleindex = (int)(c / s->cpu_tick_interval);
     sampleindex *= 2;
-    int samplecount = time / s->sample_interval;
+    int samplecount = time * s->samplerate;
     *dlen = samplecount * 2;
     float *d = (float*)malloc(*dlen * sizeof(float));
     bzero((void*)d, *dlen);

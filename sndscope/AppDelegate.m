@@ -28,14 +28,20 @@
             path = [open.URL path];
             const char * cpath = [path cStringUsingEncoding:NSUTF8StringEncoding];
             
+            self.drawView.fileName = [open.URL lastPathComponent];
             
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
                 
                 s = scope_load(cpath);
-                NSLog(@"buflen: %i ... bufend: %i",s->buf_len, s->buf_end);
                 
-                
-                [self performSelectorOnMainThread:@selector(start) withObject:nil waitUntilDone:NO];
+                if (s) {
+                    NSLog(@"buflen: %i ... bufend: %i",s->buf_len, s->buf_end);
+                    
+                    
+                    [self performSelectorOnMainThread:@selector(start) withObject:nil waitUntilDone:NO];
+                } else {
+                    [self performSelectorOnMainThread:@selector(error) withObject:nil waitUntilDone:NO];
+                }
                 
             });
             
@@ -85,6 +91,24 @@
     }
     [self load];
 }
+- (IBAction)pushReload:(id)sender {
+    if (!audio) {
+        NSBeep();
+        return;
+    }
+    if (![audio isPlaying]) {
+        NSBeep();
+        return;
+    }
+    if (!s) {
+        NSBeep();
+        return;
+    }
+    //reloads your sound file when it is already playing
+    [audio stop];
+    [audio play];
+    scope_start(s);
+}
 
 -(void)start {
     
@@ -101,9 +125,16 @@
     [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
 }
 
+-(void)error {
+    NSAlert *al = [NSAlert alertWithMessageText:@"Could not open file." defaultButton:@"OK" alternateButton:nil otherButton:nil informativeTextWithFormat:@"Check log messages."];
+    [al runModal];
+}
+
 -(void)applicationWillTerminate:(NSNotification *)notification {
     [self.timer invalidate];
-    scope_free(s);
+    if (s) {
+        scope_free(s);
+    }
     if (self.drawView.fld) {
         free(self.drawView.fld);
     }
@@ -127,6 +158,8 @@
     } else {
         NSLog(@"shutting down.");
         [self.timer invalidate];
+        scope_free(s);
+        s = NULL;
     }
 //    scope_get(s, data);
 //    if (data[0] >= -1.0f) {
