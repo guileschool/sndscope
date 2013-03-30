@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36B1C794170617F80003153A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B1C793170617F80003153A /* Cocoa.framework */; };
+		36B1C79E170617F80003153A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36B1C79C170617F80003153A /* InfoPlist.strings */; };
+		36B1C7A0170617F80003153A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B1C79F170617F80003153A /* main.m */; };
+		36B1C7A4170617F80003153A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 36B1C7A2170617F80003153A /* Credits.rtf */; };
+		36B1C7A7170617F80003153A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B1C7A6170617F80003153A /* AppDelegate.m */; };
+		36B1C7AA170617F80003153A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36B1C7A8170617F80003153A /* MainMenu.xib */; };
+		36B1C7B11706180C0003153A /* sndscope.c in Sources */ = {isa = PBXBuildFile; fileRef = 36B1C7B01706180C0003153A /* sndscope.c */; };
+		36B1C7B8170627950003153A /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B1C7B7170627950003153A /* DrawView.m */; };
+		36B1C7CF17065DE90003153A /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 36B1C7CE17065DE90003153A /* icon.icns */; };
+		36B1C7D61706631C0003153A /* libsndfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B1C7D51706631C0003153A /* libsndfile.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		36B1C790170617F80003153A /* sndscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sndscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36B1C793170617F80003153A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		36B1C796170617F80003153A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		36B1C797170617F80003153A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		36B1C798170617F80003153A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		36B1C79B170617F80003153A /* sndscope-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sndscope-Info.plist"; sourceTree = "<group>"; };
+		36B1C79D170617F80003153A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		36B1C79F170617F80003153A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		36B1C7A1170617F80003153A /* sndscope-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sndscope-Prefix.pch"; sourceTree = "<group>"; };
+		36B1C7A3170617F80003153A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		36B1C7A5170617F80003153A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		36B1C7A6170617F80003153A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		36B1C7A9170617F80003153A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		36B1C7B01706180C0003153A /* sndscope.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sndscope.c; sourceTree = "<group>"; };
+		36B1C7B21706182F0003153A /* sndscope.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sndscope.h; sourceTree = "<group>"; };
+		36B1C7B317061A470003153A /* sndfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sndfile.h; path = /opt/local/include/sndfile.h; sourceTree = "<absolute>"; };
+		36B1C7B6170627950003153A /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		36B1C7B7170627950003153A /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		36B1C7CE17065DE90003153A /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = ../icon.icns; sourceTree = "<group>"; };
+		36B1C7D51706631C0003153A /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsndfile.a; path = /opt/local/lib/libsndfile.a; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36B1C78D170617F80003153A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B1C7D61706631C0003153A /* libsndfile.a in Frameworks */,
+				36B1C794170617F80003153A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36B1C787170617F80003153A = {
+			isa = PBXGroup;
+			children = (
+				36B1C799170617F80003153A /* sndscope */,
+				36B1C792170617F80003153A /* Frameworks */,
+				36B1C791170617F80003153A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		36B1C791170617F80003153A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36B1C790170617F80003153A /* sndscope.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36B1C792170617F80003153A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36B1C7D51706631C0003153A /* libsndfile.a */,
+				36B1C793170617F80003153A /* Cocoa.framework */,
+				36B1C795170617F80003153A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36B1C795170617F80003153A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36B1C796170617F80003153A /* AppKit.framework */,
+				36B1C797170617F80003153A /* CoreData.framework */,
+				36B1C798170617F80003153A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		36B1C799170617F80003153A /* sndscope */ = {
+			isa = PBXGroup;
+			children = (
+				36B1C7B317061A470003153A /* sndfile.h */,
+				36B1C7A5170617F80003153A /* AppDelegate.h */,
+				36B1C7A6170617F80003153A /* AppDelegate.m */,
+				36B1C7A8170617F80003153A /* MainMenu.xib */,
+				36B1C7B01706180C0003153A /* sndscope.c */,
+				36B1C7B21706182F0003153A /* sndscope.h */,
+				36B1C7B6170627950003153A /* DrawView.h */,
+				36B1C7B7170627950003153A /* DrawView.m */,
+				36B1C79A170617F80003153A /* Supporting Files */,
+			);
+			path = sndscope;
+			sourceTree = "<group>";
+		};
+		36B1C79A170617F80003153A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				36B1C7CE17065DE90003153A /* icon.icns */,
+				36B1C79B170617F80003153A /* sndscope-Info.plist */,
+				36B1C79C170617F80003153A /* InfoPlist.strings */,
+				36B1C79F170617F80003153A /* main.m */,
+				36B1C7A1170617F80003153A /* sndscope-Prefix.pch */,
+				36B1C7A2170617F80003153A /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36B1C78F170617F80003153A /* sndscope */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36B1C7AD170617F80003153A /* Build configuration list for PBXNativeTarget "sndscope" */;
+			buildPhases = (
+				36B1C78C170617F80003153A /* Sources */,
+				36B1C78D170617F80003153A /* Frameworks */,
+				36B1C78E170617F80003153A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sndscope;
+			productName = sndscope;
+			productReference = 36B1C790170617F80003153A /* sndscope.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36B1C788170617F80003153A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Nico Kreipke";
+			};
+			buildConfigurationList = 36B1C78B170617F80003153A /* Build configuration list for PBXProject "sndscope" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 36B1C787170617F80003153A;
+			productRefGroup = 36B1C791170617F80003153A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36B1C78F170617F80003153A /* sndscope */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36B1C78E170617F80003153A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B1C79E170617F80003153A /* InfoPlist.strings in Resources */,
+				36B1C7A4170617F80003153A /* Credits.rtf in Resources */,
+				36B1C7AA170617F80003153A /* MainMenu.xib in Resources */,
+				36B1C7CF17065DE90003153A /* icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36B1C78C170617F80003153A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B1C7A0170617F80003153A /* main.m in Sources */,
+				36B1C7A7170617F80003153A /* AppDelegate.m in Sources */,
+				36B1C7B11706180C0003153A /* sndscope.c in Sources */,
+				36B1C7B8170627950003153A /* DrawView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		36B1C79C170617F80003153A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36B1C79D170617F80003153A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		36B1C7A2170617F80003153A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36B1C7A3170617F80003153A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		36B1C7A8170617F80003153A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36B1C7A9170617F80003153A /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		36B1C7AB170617F80003153A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		36B1C7AC170617F80003153A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		36B1C7AE170617F80003153A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sndscope/sndscope-Prefix.pch";
+				INFOPLIST_FILE = "sndscope/sndscope-Info.plist";
+				LIBRARY_SEARCH_PATHS = /opt/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		36B1C7AF170617F80003153A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sndscope/sndscope-Prefix.pch";
+				INFOPLIST_FILE = "sndscope/sndscope-Info.plist";
+				LIBRARY_SEARCH_PATHS = /opt/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36B1C78B170617F80003153A /* Build configuration list for PBXProject "sndscope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36B1C7AB170617F80003153A /* Debug */,
+				36B1C7AC170617F80003153A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36B1C7AD170617F80003153A /* Build configuration list for PBXNativeTarget "sndscope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36B1C7AE170617F80003153A /* Debug */,
+				36B1C7AF170617F80003153A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36B1C788170617F80003153A /* Project object */;
+}

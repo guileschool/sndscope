@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'sndscope' target in the 'sndscope' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
